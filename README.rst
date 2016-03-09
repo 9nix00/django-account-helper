@@ -56,7 +56,7 @@ after
 
     from account_helper.middleware import get_current_user
 
-    # ... fileds definition...
+    # ... fields definition...
 
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, default=get_current_user)
 
