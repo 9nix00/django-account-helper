@@ -1,4 +1,4 @@
-django_account_helper
+django account helper
 ==========================================
 
 django account helper utils  for `django.contrib.auth`
@@ -14,7 +14,7 @@ Requirement
 Install
 -----------------------------------
 
-...code::
+.. code-block::
 
     pip install django_acocunt_helper
 
@@ -44,48 +44,21 @@ set current user as default value
 update your model like this:
 
 before
-...code::
+
+.. code-block::
 
     owner = models.ForeignKey(settings.AUTH_USER_MODEL)
 
 
 after
-...code::
+
+.. code-block::
 
     from account_helper.middleware import get_current_user
 
-    ... fileds definition...
+    # ... fileds definition...
 
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, default=get_current_user)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
