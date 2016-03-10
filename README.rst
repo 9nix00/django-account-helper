@@ -64,3 +64,33 @@ after
 
 
 
+set current user id as default value
+#########################################
+
+
+update your model like this:
+
+before
+
+.. code-block::
+
+    owner = models.IntegerField('user id')
+
+
+after
+
+.. code-block::
+
+    from account_helper.middleware import get_current_user_id
+
+    # ... fields definition...
+
+    owner = models.IntegerField('user id',default=get_current_user_id)
+
+
+
+
+
+
+
+
