@@ -97,8 +97,11 @@ use session in form
 
 sometimes we really need handle session in form. but in django. we have to do something like this.
 
+old style
+-----------------
 
 1. in your views. set `get_form_kwargs`
+
 .. code-block::
 
     class YourFormView(FormView):
@@ -111,6 +114,7 @@ sometimes we really need handle session in form. but in django. we have to do so
 
 
 2.set your form.
+
 .. code-block::
 
     Class YourForm(forms.Form):
@@ -124,7 +128,8 @@ sometimes we really need handle session in form. but in django. we have to do so
 
 
 
-do it in django-account-helper.
+do it in django-account-helper
+-------------------------------------
 
 .. code-block::
 
